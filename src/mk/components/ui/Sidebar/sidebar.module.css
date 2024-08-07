@@ -1,0 +1,43 @@
+/* MARK: Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+
+  &>nav {
+    position: fixed;
+    top: 0;
+    left: -768px;
+    bottom: 0;
+    width: 320px;
+    z-index: 100;
+    transition: left 0.3s ease;
+
+    @media (min-width: 768px) {
+      width: 400px;
+    }
+
+    &>div {
+      display: flex;
+    }
+
+    &>section {
+      height: 100%;
+    }
+  }
+
+  &>nav.open {
+    left: 0;
+  }
+
+  &>header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

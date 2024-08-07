@@ -1,0 +1,38 @@
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spM);
+  & > button {
+    width: 100%;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    color: var(--cWhiteV3);
+    &.selected {
+      font-weight: var(--bBold);
+      color: var(--cWhite);
+      border-bottom: var(--bWidth) solid var(--cAccent);
+      transition: color 0.3s ease-in-out;
+    }
+    & > span {
+      position: absolute;
+      background-color: var(--cError);
+      border-radius: 100%;
+      top: -4px;
+      right: 0;
+      font-size: var(--sXxs);
+      padding: 2.5px;
+      width: 13px;
+      height: 13px;
+    }
+  }
+}
+
+.tabsButton.scrollable {
+  overflow-x: auto;
+  width: auto;
+  justify-content: flex-start;
+  gap: var(--spXl);
+}

@@ -1,0 +1,47 @@
+.useCrud {
+  gap: 1px;
+  & > section {
+    height: calc(100vh - 240px);
+    overflow-y: auto;
+  }
+  & > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spL);
+    overflow: visible;
+    & > div:first-child {
+      flex-grow: 1;
+    }
+  }
+
+  & .actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: var(--spM);
+    color: var(--cWhiteV1);
+
+    & > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: var(--bRadius);
+      border: 1px solid var(--cWhiteV1);
+      padding: 4px;
+      width: 40px;
+      height: 40px;
+    }
+    & div:first-child:hover {
+      color: var(--cWarning);
+    }
+    & div:last-child:hover {
+      color: var(--cError);
+    }
+  }
+}
+.formDelete {
+  display: flex;
+  color: var(--cWhiteV3);
+  font-size: var(--sM);
+}

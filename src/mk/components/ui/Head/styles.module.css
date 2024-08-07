@@ -1,0 +1,34 @@
+.headerDesktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cBlackV2);
+    height: 95px;
+    background-color: var(--cBlackV3);
+    padding: var(--spS);
+    gap: var(--spM);
+
+    &>div:nth-child(1) {
+        flex-grow: 1;
+
+        &>div {
+            font-size: var(--sXxl);
+            color: var(--cWhite);
+        }
+
+        &>span {
+            font-size: var(--sL);
+            color: var(--cWhiteV3);
+        }
+    }
+
+    &>div:nth-child(2) {
+        flex-shrink: 1;
+    }
+
+    &>div:nth-child(3) {
+        flex-shrink: 1;
+        display: flex;
+        align-items: center;
+    }
+}

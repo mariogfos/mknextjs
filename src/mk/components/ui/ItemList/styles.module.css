@@ -1,0 +1,104 @@
+.itemList {
+  width: 100%;
+  padding-bottom: var(--spM);
+
+  &.V1 {
+    /* border: var(--bWidth) solid var(--cBlackV3); */
+    border-radius: var(--bRadius);
+    padding: var(--spM);
+    background-color: var(--cBlackV2);
+    margin-bottom: var(--spM);
+  }
+  &.V2{
+    /* background-color: aquamarine; */
+    border-bottom: 1px solid var(--cBlackV1);
+    &>div{
+     & > span{
+       background-color: var(--cBlackV1);
+       padding:var(--spM);
+       border-radius: var(--bRadiusS);
+
+     }
+        &>div{
+         
+          /* background-color: blueviolet; */
+                & > div {
+                  font-size: var(--sS);
+                  font-weight: var(--bRegular);
+                  color: var(--cBlack);
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  color: var(--cWhiteV2);
+                  white-space: nowrap;
+                }
+          
+                & > span {
+                  font-size: var(--sL);
+                  font-weight: var(--bMedium);
+                  color: var(--cWhite);
+                 
+                }
+        }
+    }
+  }
+  
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: var(--spS);
+    padding-left: var(--spS);
+    padding-right: var(--spS);
+
+    & > div {
+      display: flex;
+      width: 100%;
+      flex-grow: 1;
+      flex-direction: column;
+      overflow: hidden;
+
+      & > div {
+        font-size: var(--sM);
+        font-weight: var(--bBold);
+        color: var(--cBlack);
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: var(--cWhite);
+        white-space: nowrap;
+      }
+
+      & > span {
+        font-size: var(--sS);
+        color: var(--cWhiteV2);
+      }
+    }
+  }
+
+  & > footer {
+    padding-left: var(--spS);
+    padding-right: var(--spS);
+    text-align: right;
+    font-size: var(--sXs);
+    color: var(--cWhite);
+  }
+
+  &.active {
+    border: 4px solid var(--cPrimary);
+  }
+
+
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--cBlackV1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+
+  & > svg {
+    width: 16px;
+    height: 16px;
+  }
+}

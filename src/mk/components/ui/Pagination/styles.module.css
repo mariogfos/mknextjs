@@ -1,0 +1,23 @@
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: var(--spS);
+    & > span,
+    & > div {
+      width: 32px;
+      height: 32px;
+      border: var(--bWidth) solid var(--cBlackV3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: var(--bRadiusS);
+      color: var(--cWhiteV3);
+      cursor: pointer;
+    }
+    & > div.active {
+      background-color: var(--cPrimary);
+      color: var(--cBlack);
+    }
+  }

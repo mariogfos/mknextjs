@@ -1,0 +1,58 @@
+.uploadFile {
+  margin-top: var(--spS);
+  margin-bottom: var(--spS);
+  position: relative;
+
+  & label {
+    position: absolute;
+    top: 0;
+    padding: var(--spS);
+    color: var(--cPrimary);
+    font-size: var(--sS);
+  }
+
+  & > div > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spXl);
+    background-color: var(--cBlackV2);
+    cursor: pointer;
+    border-radius: var(--bRadiusS);
+    & > input[type="file"] {
+      display: none;
+    }
+
+    & > span {
+      color: var(--cWhite);
+      font-size: var(--sS);
+    }
+
+    & > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      & > img {
+        /* max-width: 80px;
+        max-height: 80px; */
+        margin-bottom: var(--spS);
+        border-radius: var(--bRadiusS);
+
+      }
+
+      & > p {
+        color: var(--cWhite);
+        font-size: var(--sS);
+        margin-top: var(--spS);
+
+        & > span {
+          color: var(--cWhiteV1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

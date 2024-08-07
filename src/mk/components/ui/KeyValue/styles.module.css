@@ -1,0 +1,16 @@
+.keyValue {
+  display: flex;
+  font-size: var(--sS);
+  margin-bottom: var(--spXs);
+  gap: var(--spS);
+  & > div:nth-child(1) {
+    color: var(--cWhiteV3);
+    flex: 1;
+    text-align: right;
+  }
+  & > div:nth-child(2) {
+    color: var(--cWhite);
+    flex: 1;
+    text-align: left;
+  }
+}

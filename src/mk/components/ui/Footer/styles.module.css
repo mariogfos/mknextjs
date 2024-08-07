@@ -1,0 +1,24 @@
+.footer {
+  background-color: var(--cPrimary);
+  display: flex;
+  padding-top: var(--spS);
+  padding-bottom: var(--spS);
+  border-top: 1px solid var(--cBlackV3);
+  border-top-right-radius: var(--bRadiusL);
+  border-top-left-radius: var(--bRadiusL);
+  justify-content: space-around;
+}
+
+.footer>a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spXs);
+  text-decoration: none;
+  color: var(--cWhite);
+  font-size: var(--sS);
+}
+
+.footer>a.active {
+  color: var(--cSecondary);
+}

@@ -1,0 +1,86 @@
+.input {
+  color: var(--cWhite);
+  background-color: var(--cBlackV3);
+  width: 100%;
+  border-radius: var(--bRadius);
+  border: var(--bWidth) solid var(--cBlackV3);
+  font-size: var(--sL);
+  align-items: center;
+  position: relative;
+  padding-top: var(--spS);
+  padding-left: var(--spL);
+  padding-right: var(--spL);
+  display: flex;
+  gap: var(--spXs);
+  margin-bottom: calc(var(--spS) * 2);
+  & > span {
+    flex-shrink: 1;
+    display: flex;
+    align-items: center;
+    color: var(--cWhiteV3);
+  }
+  & > div {
+    flex-grow: 1;
+    position: relative;
+
+    & > label {
+      position: absolute;
+      left: 0;
+      top: 6px;
+      transition: all 0.3s;
+      font-size: var(--sS);
+      color: var(--cWhiteV3);
+      &.error {
+        color: var(--cError);
+      }
+
+      & > span {
+        font-size: var(--sXs);
+      }
+    }
+    & input[type="number"]::-webkit-inner-spin-button,
+    & input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    & input:focus + label,
+    & input:not(:placeholder-shown) + label {
+      color: var(--cAccent);
+      top: var(--spS);
+      left: 0;
+      font-size: var(--sXs);
+      transform: translateY(-80%);
+    }
+    & > input {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      color: var(--cWhite);
+      font-size: var(--sS);
+      outline: none;
+      padding: 0;
+      margin: 0;
+      height: 36px;
+    }
+  }
+  &:focus-within {
+    border: var(--bWidth) solid var(--cAccent);
+    color: var(--cWhite);
+  }
+
+  &.error {
+    border: var(--bWidth) solid var(--cError);
+    & input:focus + label,
+    & input:not(:placeholder-shown) + label {
+      color: var(--cError);
+    }
+
+    & p {
+      position: absolute;
+      bottom: calc(var(--spL) * -1);
+      font-size: var(--sXs);
+      color: var(--cError);
+    }
+  }
+}

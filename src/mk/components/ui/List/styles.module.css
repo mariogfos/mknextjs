@@ -1,0 +1,8 @@
+.list {
+  & > div {
+    color: var(--cWhite);
+    & > div > div > div > div {
+      color: var(--cWhite);
+    }
+  }
+}

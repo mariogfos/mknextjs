@@ -1,0 +1,7 @@
+.tagLabel {
+    background-color: var(--cAccent);
+    padding:var(--spXs) var(--spS);
+    border-radius: var(--bRadius);
+    color:var(--cBlack);
+    width: max-content;
+}

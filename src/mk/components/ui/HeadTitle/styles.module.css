@@ -1,0 +1,23 @@
+.headTitle {
+  display: flex;
+  color: var(--cWhiteV3);
+  width: 100%;
+  padding: var(--spM);
+  align-items: center;
+  background-color: var(--cBlack);
+  border-bottom-left-radius: var(--bRadiusL);
+  border-bottom-right-radius: var(--bRadiusL);
+
+  &>span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  &>div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
