@@ -11,7 +11,7 @@ const parsePHPFile = (filePath) => {
   const phpContent = fs.readFileSync(filePath, "utf8");
   const fillableMatch = phpContent.match(/\$fillable\s*=\s*\[(.*?)\];/s);
   if (!fillableMatch) {
-    console.log(chalk.red("No $fillable variable found in the PHP model.."));
+    console.log(chalk.red("No $fillable variable found in the PHP model....."));
     return [];
   }
   const fillableFields = fillableMatch[1]
