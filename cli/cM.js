@@ -211,9 +211,13 @@ const createModule = (moduleName, crud = false, modelName = "") => {
     "../../pages",
     `${moduleName.toLowerCase()}.tsx`
   );
+
+  const currentDir = __dirname.split("/").pop();
+  const moduleNamePhp = currentDir.split("-")[0];
+
   const apiModelPath = path.join(
     __dirname,
-    "../../../../api/app/models",
+    "../../../../" + moduleNamePhp + "-api/app/models",
     `${modelName}.php`
   );
   const apiFieldsPath = path.join(__dirname, "../../../api_fields.txt");
